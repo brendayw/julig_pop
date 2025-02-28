@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juli G Pop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="Logo del artista">
+        </div>
+        
+        <nav>
+            <ul>
+              <li><a href="#biografia">Biografía</a></li>
+              <li><a href="#musica">Música</a></li>
+              <li><a href="#videos">Videos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <section id="ultimo_single">
+        <h2>Último single</h2>
+        <img src="assets/images/13236713ba12172b133cb0d6a3f7da60.jpg" alt="Logo del artista">
+        <p>[Información sobre el ultimo single]</p>
+    </section>
+
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>JULI G es un autor, compositor, intérprete y productor artístico/ musical de música pop; 
+            oriundo de la ciudad de Bahía Blanca, Provincia de Buenos Aires, Argentina. 
+            Actualmente está trabajando en un álbum que está en proceso de grabación.
+        </p>
+        <img src="assets/images/26c52464eee791e587d42d51630e7db4.jpg" alt="Logo del artista">
+    </section>
+
+    <section id="musica">
+        <h2>Escucha su música</h2>
+        <audio controls>
+          <source src="assets/audio/cancion1.mp3" type="audio/mp3">
+          Tu navegador no soporta la etiqueta de audio.
+        </audio>
+    </section>
+
+    <section id="videos">
+        <h2>Ver videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FxBXv50eCGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EcnWpBA4AAs?start=929" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="contacto.html" method="post" id="form-contacto">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+    
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+    
+          <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Nombre del Artista] - Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>
