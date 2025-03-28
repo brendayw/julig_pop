@@ -19,14 +19,17 @@
     width: 100%;
     height: 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 50px 12px;
+    padding: 25px 12px;
 }
 
 .menu-logo {
     padding: 0.5rem;
     margin: 0.2rem;
-    
+    position: absolute;  /* Hace que el div se posicione en relación con el contenedor */
+    left: 0;             /* Lo coloca en el borde izquierdo */
+    top: 0; 
 }
 
 .menu-logo img {
@@ -37,19 +40,68 @@
 .menu-nav {
     height: 49px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 0 218px 0 218px;
 }
 
 .menu-nav a {
     text-decoration: none;
     cursor: pointer;
     font-family: var(--fuente-primario);
-    font-size: 18px;
+    font-size: 15px;
     color: var(--primario);
     border: 1px solid var(--primario);
     border-radius: 45px;
-    padding: 12px 35px;
+    padding: 5px 30px;
+    margin-left: 15px;
 }
 
+.principal {
+    height: 100vh;
+}
+/*imagenes de fondon*/
+.logo-detras {
+    position: relative;
+    margin-left: 3rem;
+    width: 633px;
+    height: 312px;
+    z-index: 1;
+}
+
+.foto-fondo {
+    filter: drop-shadow(5px 5px 10px rgba(22, 22, 22, 0.795));
+    position: absolute;
+    top: 30px;
+    right: 0; 
+    width: 900px;
+    height: 574px;
+    z-index: 2;
+}
+
+.links-redes {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 31px;
+}
+
+.img-flecha {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    z-index: 3;
+}
+
+.img-flecha img {
+    width: 128px;
+    height: 56px;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
