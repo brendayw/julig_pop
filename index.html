@@ -15,7 +15,7 @@
         
         <nav class="menu-nav">
             <div class="nav">
-                <a class="link" href="#">Inicio</a>
+                <a class="link" href="#principal">Inicio</a>
                 <a class="link" href="#biografia">Biografía</a>
                 <a class="link" href="#musica">Música</a>
                 <a class="link" href="#videos">Videos</a>
@@ -24,7 +24,7 @@
           </nav>
     </header>
 
-    <section class="principal siguiente-seccion">
+    <section id="principal" class="principal siguiente-seccion">
         <img src="/assets/images/juli g PNG.png" alt="logo_julig" class="logo-detras">
         <img src="/assets/images/IMG_9208.png" alt="foto juli g" class="foto-fondo">
 
@@ -45,8 +45,7 @@
         </div>
     </section>
 
-    <section class="novedades ultimo_single siguiente-seccion">
-        
+    <section id="novedades" class="novedades ultimo_single siguiente-seccion">
         <div class="info-single">
             <div class="titulo-single">
                 <h4>INSTINTO ANIMAL</h4>
@@ -74,13 +73,9 @@
                 loading="lazy">
             </iframe>
         </div>
-
-        <div class="img-flecha">
-            <img src="/assets/iconos_redes/double_arrow_24dp_523AFC_FILL0_wght400_GRAD0_opsz24.png" alt="" id="flecha">
-        </div>
     </section>
 
-    <section class="biografia siguiente-seccion">
+    <section id="biografia" class="biografia siguiente-seccion">
         <div class="titulo-seccion-biografia">
             <h3>Biografía</h3>
         </div>
@@ -123,34 +118,42 @@
                 </button>
             </div>
         </div>
-        
-        
     </section>
 
-    <section class="musica siguiente-seccion">
+    <section id="musica" class="musica siguiente-seccion">
         <div class="titulo-seccion-musica">
             <h2>Escucha su música</h2>
         </div>
-        
-        <audio controls>
-          <source src="assets/audio/cancion1.mp3" type="audio/mp3">
-          Tu navegador no soporta la etiqueta de audio.
-        </audio>
 
-        
+        <div class="spotify">
+            <div class="spotify-single">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0NEblwvMCVxA4q3MmC67ap?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            
+            <div class="spotify-playlist">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2RUcSxfSd8UIa2s5YWZatx?utm_source=generator" 
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+    
+            <div class="spotify-single">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2kEPfamr7uEksUnUSnCNXV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
     </section>
 
-    <section class="videos siguiente-seccion">
+    <section id="videos" class="videos siguiente-seccion">
         <div class="titulo-seccion-videos">
             <h2>Ver videos</h2>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FxBXv50eCGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EcnWpBA4AAs?start=929" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-        
+        <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FxBXv50eCGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EcnWpBA4AAs?start=929" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
 
-    <section class="contacto siguiente-seccion">
+    <section id="contacto" class="contacto siguiente-seccion">
         <div class="titulo-seccion-contacto">
             <h2>Contacto</h2>
         </div>

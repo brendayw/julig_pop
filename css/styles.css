@@ -4,9 +4,9 @@
 :root {
     --primario: #523AFC;
     --secundario: #f7066a;
+    --terciario: #fd5701;
     --negro: #000000;
-    ---blanco: #FFFFFF;
-
+    --blanco: #FFFFFF;
     --fuente-primario: "Kotta One", serif;
     --fuente-secundaria: "Montserrat", sans-serif;
 }
@@ -41,6 +41,7 @@ body {
     position: absolute;
     left: 0;
     top: 0; 
+    z-index: 0;
 }
 
 .menu-logo img {
@@ -75,10 +76,11 @@ body {
 /*imagenes de fondon*/
 .logo-detras {
     position: relative;
+    top: 50px;
     margin-left: 3rem;
     width: 633px;
     height: 312px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .foto-fondo {
@@ -98,27 +100,8 @@ body {
     align-items: center;
     gap: 10px;
     margin-left: 31px;
-}
-
-.img-flecha {
-    position: absolute;
-    top: 90%;
-    left: 40%;
-    z-index: 1000;
-}
-
-.img-flecha img {
-    width: 128px;
-    height: 56px;
-    cursor: pointer;
-    animation: bounce 1s infinite;
-}
-
-#flecha {
-    display: block;
-    visibility: visible;
     position: relative;
-    z-index: 10;
+    top: 80px;
 }
 
 /*seccion de ultimo single*/
@@ -209,7 +192,8 @@ body {
     height: 20%;
     position: relative;
     top: -250px;
-    left: 60%;
+    left: 70%;
+    transform: translateX(-50%);
     filter: drop-shadow(5px 5px 10px rgba(22, 22, 22, 0.795));
 }
 
@@ -218,17 +202,100 @@ body {
 }
 
 /* seccion musica */
-
 .musica {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.titulo-seccion-musica {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    top: 12%;
+    left: 37%;
+}
+
+.titulo-seccion-musica h2 {
+    font-family: var(--fuente-primario);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--terciario);
+}
+
+.spotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.spotify-playlist, .spotify-single {
+    width: 25%;
+    position: relative;
+    top: 105px;
+    /* left: 37%; */
+    filter: drop-shadow(5px 5px 10px var(--terciario));
+}
+
+/*seccion videos*/
 .videos {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.titulo-seccion-videos {
+    width: 25%;
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+
+.titulo-seccion-videos h2 {
+    font-family: var(--fuente-primario);
+    font-size: 2.5rem;
+    color: var(--primario);
+}
+
+.youtube {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*seccion contacto*/
 .contacto {
     height: 100vh;
+}
+
+/*flechas*/
+.img-flecha {
+    position: fixed;
+    top: 90%;
+    left: 45%;
+    z-index: 1000;
+}
+
+.img-flecha img {
+    width: 128px;
+    height: 56px;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+#flecha {
+    display: block;
+    visibility: visible;
+    position: relative;
+    z-index: 10;
 }
 
 @keyframes bounce {
